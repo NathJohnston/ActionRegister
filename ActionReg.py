@@ -5,7 +5,7 @@ import snowflake.connector
 #use this for Control of Flow changes - error message handling
 #from urllib.error import URLError
 
-streamlit.title('My Parents New Healthy Diner')
+streamlit.title('Actions and Issues Tracker')
 
 streamlit.header('Breakfast Menu')
 streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
