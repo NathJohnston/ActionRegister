@@ -1,6 +1,6 @@
 # Import statements
 import streamlit
-#import requests
+import requests
 #import snowflake.connector
 #use this for Control of Flow changes - error message handling
 #from urllib.error import URLError
