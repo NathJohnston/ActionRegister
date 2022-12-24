@@ -22,3 +22,5 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("test data")
 #streamlit.dataframe(my_data_row)
 streamlit.dataframe(my_data_rows)
+
+# new action variables
