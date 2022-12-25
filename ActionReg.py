@@ -31,5 +31,6 @@ action_date = streamlit.text_input('Action date:')
 
 d = streamlit.date_input(
     "When\'s your birthday",
-    datetime.date(2019, 7, 6))
+    #datetime.date(2019, 7, 6)
+)
 streamlit.write('Your birthday is:', d)
