@@ -19,8 +19,9 @@ my_cur.execute("SELECT * FROM tblTruckPayloadTargets")
 #my_data_row = my_cur.fetchone()
 my_data_rows = my_cur.fetchall()
 
-streamlit.header("test data")
+streamlit.header("Action/ Issue Register")
 #streamlit.dataframe(my_data_row)
 streamlit.dataframe(my_data_rows)
 
 # new action variables
+action_date = streamlit.text_input('Action date:')
