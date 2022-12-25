@@ -26,11 +26,9 @@ streamlit.header("Action/ Issue Register")
 streamlit.dataframe(my_data_rows)
 
 # new action variables
-action_date = streamlit.text_input('Action date:')
+action_date = streamlit.date_input('Action date:')
 
 
-d = streamlit.date_input(
-    "When\'s your birthday",
-    #datetime.date(2019, 7, 6)
-)
-streamlit.write('Your birthday is:', d)
+#d = streamlit.date_input("When\'s your birthday", #datetime.date(2019, 7, 6))
+                         
+streamlit.write('selected action date is:', action_date)
