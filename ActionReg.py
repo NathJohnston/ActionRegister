@@ -27,7 +27,7 @@ streamlit.dataframe(my_data_rows)
 action_date = streamlit.text_input('Action date:')
 
 
-d = st.date_input(
+d = streamlit.date_input(
     "When\'s your birthday",
     datetime.date(2019, 7, 6))
 streamlit.write('Your birthday is:', d)
