@@ -23,7 +23,7 @@ my_cur.execute("SELECT * FROM tblTruckPayloadTargets")
 # -- Populate the dataframe
 my_data_rows = my_cur.fetchall()
 streamlit.header("Action/ Issue Register")
-#streamlit.dataframe(my_data_rows)
+streamlit.dataframe(my_data_rows)
 
 
 
