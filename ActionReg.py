@@ -2,6 +2,11 @@
 import streamlit
 import requests
 import snowflake.connector
+
+# ----------Testing---------------
+import pandas as pd
+import numpy as np
+# --------------------------------
 #use this for Control of Flow changes - error message handling
 #from urllib.error import URLError
 
@@ -21,7 +26,11 @@ my_data_rows = my_cur.fetchall()
 
 streamlit.header("Action/ Issue Register")
 #streamlit.dataframe(my_data_row)
-streamlit.dataframe(my_data_rows)
+#streamlit.dataframe(my_data_rows)
 
 # new action variables
 action_date = streamlit.text_input('Action date:')
+
+# ----------Testing---------------
+
+# --------------------------------
