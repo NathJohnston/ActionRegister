@@ -14,10 +14,10 @@ import numpy as np
 streamlit.title('Actions and Issues Tracker')
 
 #test snowflake connection
-my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-my_cur = my_cnx.cursor()
+#my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+#my_cur = my_cnx.cursor()
 #my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
-my_cur.execute("SELECT * FROM tblTruckPayloadTargets")
+#my_cur.execute("SELECT * FROM tblTruckPayloadTargets")
 
 
 streamlit.header("Action/ Issue Register")
