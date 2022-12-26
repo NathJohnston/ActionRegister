@@ -6,6 +6,7 @@ import snowflake.connector
 # ----------Testing---------------
 import pandas as pd
 import numpy as np
+streamlit==1.10.0
 # --------------------------------
 #use this for Control of Flow changes - error message handling
 #from urllib.error import URLError
