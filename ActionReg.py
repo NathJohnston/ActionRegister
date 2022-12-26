@@ -24,7 +24,7 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("Action/ Issue Register")
 #streamlit.dataframe(my_data_row)
 streamlit.dataframe(my_data_rows)
-similar.rename(columns= {'col1':'new_col1','col2':'new_col2'}, inplace = True)
+#similar.rename(columns= {'col1':'new_col1','col2':'new_col2'}, inplace = True)
 
 
 
