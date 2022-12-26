@@ -23,10 +23,10 @@ my_cur.execute("SELECT * FROM tblTruckPayloadTargets")
 # -- Populate the dataframe
 my_data_rows = my_cur.fetchall()
 streamlit.header("Action/ Issue Register")
-streamlit.dataframe(my_data_rows)
+#streamlit.dataframe(my_data_rows)
 
 
 
 # -- new action variables
-#action_date = streamlit.date_input('Action date:')                        
+action_date = streamlit.date_input('Action date:')                        
 #streamlit.write('selected action date is:', action_date)
