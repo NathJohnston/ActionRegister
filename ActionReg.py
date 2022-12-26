@@ -12,9 +12,6 @@ import numpy as np
 
 streamlit.title('Actions and Issues Tracker')
 
-#streamlit.header('Breakfast Menu')
-#streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
-
 #test snowflake connection
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
