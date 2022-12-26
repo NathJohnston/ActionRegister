@@ -9,12 +9,9 @@ import datetime
 
 streamlit.title('Actions and Issues Tracker')
 
-#streamlit.header('Breakfast Menu')
-#streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
-
 # -- connect to snowflake and populate the cursor
-#my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-#my_cur = my_cnx.cursor()
+my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+my_cur = my_cnx.cursor()
 
 # -- test the connection
 #my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
