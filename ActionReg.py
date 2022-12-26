@@ -29,5 +29,9 @@ streamlit.header("Action/ Issue Register")
 action_date = streamlit.text_input('Action date:')
 
 # ----------Testing---------------
+df = pd.DataFrame(
+   np.random.randn(50, 20),
+   columns=('col %d' % i for i in range(20)))
 
+streamlit.dataframe(df)  # Same as st.write(df)
 # --------------------------------
