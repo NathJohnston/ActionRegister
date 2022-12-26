@@ -24,14 +24,9 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("Action/ Issue Register")
 #streamlit.dataframe(my_data_row)
 streamlit.dataframe(my_data_rows)
-#similar.rename(columns= {'col1':'new_col1','col2':'new_col2'}, inplace = True)
 
 
 
 # new action variables
-action_date = streamlit.date_input('Action date:')
-
-
-#d = streamlit.date_input("When\'s your birthday", #datetime.date(2019, 7, 6))
-                         
+action_date = streamlit.date_input('Action date:')                        
 streamlit.write('selected action date is:', action_date)
