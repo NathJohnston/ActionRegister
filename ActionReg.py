@@ -24,6 +24,7 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("Action/ Issue Register")
 #streamlit.dataframe(my_data_row)
 streamlit.dataframe(my_data_rows)
+streamlit.dataframe = ['col1', 'col2','col3', 'col4', 'col4']
 
 # new action variables
 action_date = streamlit.date_input('Action date:')
