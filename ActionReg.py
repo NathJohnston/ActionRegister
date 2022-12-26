@@ -11,17 +11,26 @@ streamlit.title('Actions and Issues Tracker')
 
 # -- connect to snowflake and populate the cursor
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-my_cur = my_cnx.cursor()
+#my_cur = my_cnx.cursor()
 
 # -- test the connection
 #my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
 
+#Snowflake-related functions
+def get_action_registet_list():
+   with my_cnx.cursor() as my_cur:
+      my_cur.execute("SELECT * FROM tblTruckPayloadTargets")
+      return my_cur.fetchall()
+
+
+
+
 # -- execute Snowflake query
-my_cur.execute("SELECT * FROM tblTruckPayloadTargets")
+#my_cur.execute("SELECT * FROM tblTruckPayloadTargets")
 
 #--my_data_row = my_cur.fetchone()
 # -- Populate the dataframe
-my_data_rows = my_cur.fetchall()
+#my_data_rows = my_cur.fetchall()
 streamlit.header("Action/ Issue Register")
 #streamlit.dataframe(my_data_rows)
 
