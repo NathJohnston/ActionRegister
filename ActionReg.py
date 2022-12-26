@@ -12,21 +12,22 @@ streamlit.title('Actions and Issues Tracker')
 #streamlit.header('Breakfast Menu')
 #streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
 
-#test snowflake connection
-my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-my_cur = my_cnx.cursor()
+# -- connect to snowflake and populate the cursor
+#my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
+#my_cur = my_cnx.cursor()
+
+# -- test the connection
 #my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
-my_cur.execute("SELECT * FROM tblTruckPayloadTargets")
+#my_cur.execute("SELECT * FROM tblTruckPayloadTargets")
 
-#my_data_row = my_cur.fetchone()
-my_data_rows = my_cur.fetchall()
-
-streamlit.header("Action/ Issue Register")
-#streamlit.dataframe(my_data_row)
-streamlit.dataframe(my_data_rows)
-
+#--my_data_row = my_cur.fetchone()
+# -- Populate the dataframe
+#my_data_rows = my_cur.fetchall()
+#streamlit.header("Action/ Issue Register")
+#streamlit.dataframe(my_data_rows)
 
 
-# new action variables
-action_date = streamlit.date_input('Action date:')                        
-streamlit.write('selected action date is:', action_date)
+
+# -- new action variables
+#action_date = streamlit.date_input('Action date:')                        
+#streamlit.write('selected action date is:', action_date)
